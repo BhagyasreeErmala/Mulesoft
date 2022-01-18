@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="mule-code-coverageFlow" doc:id="b2bfb388-efcc-49dd-9571-e72593de014f" >
+		<scheduler doc:name="Scheduler" doc:id="e9e00449-8313-403a-bcb6-76fbd4798116" >
+			<scheduling-strategy >
+				<fixed-frequency frequency="10000"/>
+			</scheduling-strategy>
+		</scheduler>
+		<logger level="INFO" doc:name="Logger" doc:id="fb1eaf5c-1cf7-46dc-b817-0e633cf5f8cb" message="Welcome to mule code coverage"/>
+	</flow>
+</mule>
